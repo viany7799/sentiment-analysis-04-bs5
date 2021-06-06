@@ -40,7 +40,8 @@ y_pred = model.predict(x_test)
 from sklearn.metrics import  accuracy_score,confusion_matrix,classification_report
 accuracy_score(y_pred,y_test)
 
-text = 'Not tasty and the texture was just nasty'
+text = 'Not tasty and the texture was just nasty'  
+
 ypred = model.predict(vect.transform([text]))
 
 import joblib
